@@ -1,0 +1,38 @@
+\d     - digit(0-9)
+\D     - not digit(!0-9)
+\w     - letter, digit, underscore
+\W     - not letter, digit, underscore
+\s     - space, tab, newline
+\S     - not space, tab, newline
+\( \)  - parenthesis
+|      - multiple
+?      - zero or one
+*      - zero or more
++      - one or more(greedy)
++?     - one or more(nongreedy)
+^hello - must begin with hello
+bye$   - must end with bye
+.      - any character but newline
+.*     - anything but newline(greedy)
+.*?    - anything but newline(nongreedy)
+{n}    - matches exactly n of group
+{n,}   - matches n or more of group
+{,m}   - matches 0 to m of group
+{n,m}  - matches at least n and most m(greedy)
+{n,m}? - match number of times(nongreedy)
+[aeiou]- custom character class
+[a-z]  - all lowercase
+[A-Z]  - all uppercase
+[0-9]  - all digits
+[^n]   - all that aren't n
+
+
+
+
+search() - return Match object of first matched text
+findall() - return Match object of all matched text
+sub() - substitutes; first arg is string to replace, second is regex
+*re.DOTALL - includes newline characters
+*re.I - ignores case
+*re.VERBOSE - spreads case out to make it easier to understand(must be second argument to re.compile)
+if you need to use multiple *'s, use |
