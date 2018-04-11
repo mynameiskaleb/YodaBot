@@ -9,7 +9,7 @@ import praw
 import time
 import random
 
-reddit = praw.Reddit(client_id='-HGLGdigUxHTYA', client_secret='u_KwRmLl1sX1XXp86ehaDRWGnLE', password='awxdrv196^^', user_agent='A bot that speaks Yoda with users on reddit created by /u/KalebtheKraken', username='TheYodaBot')
+reddit = praw.Reddit(client_id='CLIENT_ID', client_secret='CLIENT_SECRET', password='PASSWORD', user_agent='A bot that speaks Yoda with users on reddit created by /u/KalebtheKraken', username='USERNAME')
 
 lookforwords = ['star wars', 'yoda', 'the force', 'luke skywalker', 'tatooine', 'princess leah']
 cache = []
