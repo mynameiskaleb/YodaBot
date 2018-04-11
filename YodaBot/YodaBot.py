@@ -61,11 +61,3 @@ while True:
         time.sleep(60)
     except:
         pass
-'''
-
-submission = reddit.submission(id='8bba4t')
-
-submission.comments.replace_more(limit=2)
-for top_level_comment in submission.comments:
-    for second_level_comment in top_level_comment.replies:
-        print(top_level_comment.body, second_level_comment.body)'''
