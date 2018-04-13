@@ -33,7 +33,7 @@ def run():
 		ismatch = any(string in comment_body for string in lookforwords)	# looks for matching words from wordlist
 		if thing.id not in cache and ismatch and thing.author not in block:	# makes sure comment id isnt used, a word matches, and author doesn't want stop
 				print("I have a match. ID: " + comment.id)	# find match
-				thing.reply(mix_comment(comment_body) + '\n\nCreated by [KalebtheKraken](https://www.reddit.com/u/kalebthekraken) this bot was. If annoying I am, reply stop me you will.')	# reply with new mixed comment
+				thing.reply(mix_comment(comment_body) + '\n\nCreated by [KalebtheKraken](https://www.reddit.com/u/kalebthekraken) this bot was. If copy wou want, go [here](https://github.com/mynameiskaleb/messingwithpython/tree/master/YodaBot) tou will. If annoying I am, reply stop me you will.')	# reply with new mixed comment
 				print('Reply successful!!')
 				cache.append(thing.id)	# add comment id to list
 	print("Finished. Gonna rest a minute.")
